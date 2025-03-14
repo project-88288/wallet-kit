@@ -3,7 +3,7 @@ import axios from "axios"
 
 export async function getInitialConfig() {
   const { data } = await axios.get<Record<string, InfoResponse>>(
-    "https://station-assets.terra.dev/chains.json"
+    "https://dev.opzlabs.com/assets/chains.json"
   )
   return data.mainnet
 }

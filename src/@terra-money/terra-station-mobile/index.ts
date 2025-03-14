@@ -87,7 +87,7 @@ export default class TerraStationMobileWallet implements Wallet {
     if (this._networksList) return this._networksList
 
     const { data } = await axios.get(
-      "https://station-assets.terra.dev/chains.json"
+      "https://dev.opzlabs.com/assets/chains.json"
     )
     const result = Object.fromEntries(
       Object.entries({
